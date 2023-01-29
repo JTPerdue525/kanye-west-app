@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <! --Link to REST API used by this project - https://github.com/ajzbc/kanye.rest-->
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1 class="title">Kanye West Quotes</h1>
+
+    <div class="main-content">
+      <img class = "kanye-pic" src="https://www.capitalfm.co.ke/thesauce/files/2020/06/Kanye-West-cropped-2048x1954.jpg"/>
+      <span class="bubble" id="spanId"></span>
+    </div>
+
+    <script>
+      async function getQuote() {
+        const post = await fetch("https://api.kanye.rest").then((res) => res.json());
+        document.getElementById("spanId").innerText = post.quote;
+      }
+      getQuote();
+    </script>
+  </body>
+</html>
