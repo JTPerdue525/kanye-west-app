@@ -1,4 +1,4 @@
-*{
+body{
     background-color: blueviolet;
 }
 
@@ -8,6 +8,7 @@
 }
 
 .main-content{
+    background-color: #443266;
     width: 100%;
     outline: solid 2px black;
     display: flex;
@@ -30,5 +31,22 @@
     border-radius: 4em;
     padding: 2em;
     text-align: center;
+    margin-left: 6%;
     color: #000;
+}
+
+.quote-control{
+    margin-top: 3em;
+    text-align: center;
+}
+
+.quote-button{
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+.quote-button:hover{
+    background-color: darkgray;
 }
